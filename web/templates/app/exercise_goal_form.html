@@ -1,0 +1,98 @@
+{% extends "app/base_site.html" %}
+
+{% block title %} Goal {% endblock title %}
+
+{% block stylesheets %}
+{{ block.super }}
+<!-- Ion.RangeSlider -->
+<link href="/static/vendors/ion.rangeSlider/css/ion.rangeSlider.css" rel="stylesheet">
+<link href="/static/vendors/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+{% endblock stylesheets %}
+
+{% block content %}
+<div class="right_col" role="main">
+	<div class="">
+		<div class="page-title">
+			<div class="title_left">
+				<h3>운동 목표치 등록</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-xs-12">
+				<div class="x_panel">
+					<div class="x_title">
+						<h2>운동 정보 <small>헬스장 별로 제공되는 운동기구가 다를 수 있습니다.</small></h2>
+						<div class="clearfix"></div>
+					</div>
+					<div class="x_content">
+						<br />
+						<form class="form-horizontal form-label-left" action="{% url 'app:enrollExerciseGoal'%}" method="post">
+							{% csrf_token %}
+							<div class="form-group">
+								<label class="control-label col-md-3 col-sm-3 col-xs-12">운동 선택</label>
+								<div class="col-md-9 col-sm-9 col-xs-12">
+									<select class="select2_group form-control" name="equipment">
+										<optgroup label="상체">
+											<option value="benchpress">벤치 프레스</option>
+											<option value="dumbell">덤벨</option>
+										</optgroup>
+										<optgroup label="하체">
+											<option value="none">지원되는 기구가 없습니다.</option>
+										</optgroup>
+										<optgroup label="전신">
+											<option value="none">지원되는 기구가 없습니다.</option>
+										</optgroup>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="control-label col-md-3 col-sm-3 col-xs-12">기간</label>
+								<div class="col-md-9 col-sm-9 col-xs-12">
+									<fieldset>
+										<div class="control-group">
+											<div class="controls">
+												<div class="input-prepend input-group">
+													<span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span>
+													<input type="text" style="width: 200px" name="dateRange" id="reservation" class="form-control" value="05/10/2018 - 05/12/2018" />
+												</div>
+											</div>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="control-label col-md-3 col-sm-3 col-xs-12">기간</label>
+								<div class="col-md-2">
+									<p>중량(kg)</p>
+									<input class="knob" data-width="100" data-height="120" data-max="200" data-min="0" data-displayPrevious=true data-fgColor="#26B99A" value="0" name="weight">
+								</div>
+								<div class="col-md-2">
+									<p>횟수(회)</p>
+									<input class="knob" data-width="100" data-height="120" data-max="20" data-min="0" data-fgColor="#34495E" value="0" name="count">
+								</div>
+							</div>
+
+							<div class="ln_solid"></div>
+							<div class="form-group">
+								<div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+									<button type="button" class="btn btn-primary">취소</button>
+									<button type="submit" class="btn btn-success">제출</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+{% endblock content %}
+
+{% block javascripts %}
+{{ block.super}}
+<!-- jQuery Knob -->
+<script src="/static/vendors/jquery-knob/dist/jquery.knob.min.js"></script>
+{% endblock javascripts %}

@@ -1,0 +1,254 @@
+<!-- <form class="form-horizontal form-label-left">
+	<div class="form-group">
+		<label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">증상 </span>
+		</label>
+		<div class="col-md-6 col-sm-6 col-xs-12">
+			<input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+		</div>
+	</div>
+</form> -->
+<div class="col-sm-12">
+	<div class="x_title">
+		<h2>두통: 머리가 아프십니까? </h2>
+		<ul class="nav navbar-right panel_toolbox">
+			<div class="btn-group" data-toggle="buttons">
+				<label class="btn btn-default">
+					<input type="radio" name="headache_radio" value="y"> 예
+				</label>
+				<label class="btn btn-default active">
+					<input type="radio" name="headache_radio" value="n"> 아니요
+				</label>
+			</div>
+		</ul>
+		<div class="clearfix"></div>
+	</div>
+	<table style="text-align: center" id="survey_headache_table" class="table table-striped table-bordered dataTable no-footer" role="grid">
+		<thead>
+			<tr role="row">
+				<th rowspan="2" colspan="1" width="22%">어떻게 아프십니까</th>
+				<th rowspan="1" colspan="3" width="39%">얼마나 자주?</th>
+				<th rowspan="1" colspan="3" width="39%">얼마나 심한지?</th>
+			</tr>
+			<tr role="row">
+				<th rowspan="1" colspan="1" width="13%">없다</th>
+				<th rowspan="1" colspan="1" width="13%">보통</th>
+				<th rowspan="1" colspan="1" width="13%">심함</th>
+				<th rowspan="1" colspan="1" width="13%">없다</th>
+				<th rowspan="1" colspan="1" width="13%">보통</th>
+				<th rowspan="1" colspan="1" width="13%">심함</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr role="row" class="odd">
+				<td>압박감, 조임 통</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_1" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_1" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_1" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_1" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_1" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_1" id="6" value="2" /></td>
+			</tr>
+			<tr role="row" class="even">
+				<td>박동하면서 지끈거림</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_2" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_2" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_2" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_2" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_2" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_2" id="6" value="2" /></td>
+			</tr>
+			<tr role="row" class="even">
+				<td>터질 듯, 쪼개질 듯 통증</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_3" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_3" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_3" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_3" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_3" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_3" id="6" value="2" /></td>
+			</tr>
+			<tr role="row" class="even">
+				<td>바늘로 콕콕 찌름</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_4" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_4" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_4" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_4" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_4" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_4" id="6" value="2" /></td>
+			</tr>
+			<tr role="row" class="even">
+				<td>타박이나 외상 후유증</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_5" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_5" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_5" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_5" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_5" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_5" id="6" value="2" /></td>
+			</tr>
+			<tr role="row" class="even">
+				<td>소화 장애나 오심, 구토</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_6" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_6" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_6" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_6" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_6" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_6" id="6" value="2" /></td>
+			</tr>
+			<tr role="row" class="even">
+				<td>스트레스, 두근거림, 불안, 긴장</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_7" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_7" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_7" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_7" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_7" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_7" id="6" value="2" /></td>
+			</tr>
+			<tr role="row" class="even">
+				<td>분노나 혈압 상승</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_8" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_8" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_8" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_8" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_8" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_8" id="6" value="2" /></td>
+			</tr>
+			<tr role="row" class="even">
+				<td>과로, 빈혈</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_9" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_9" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_9" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_9" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_9" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_9" id="6" value="2" /></td>
+			</tr>
+			<tr role="row" class="even">
+				<td>뒷목과 어깨가 뻐근함</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_10" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_10" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_10" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_10" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_10" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_10" id="6" value="2" /></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="x_title">
+		<h2>어지러운 증상: 어지러운가요? </h2>
+		<ul class="nav navbar-right panel_toolbox">
+			<div class="btn-group" data-toggle="buttons">
+				<label class="btn btn-default">
+					<input type="radio" name="dizziness_radio" value="y"> 예
+				</label>
+				<label class="btn btn-default active">
+					<input type="radio" name="dizziness_radio" value="n"> 아니요
+				</label>
+			</div>
+		</ul>
+		<div class="clearfix"></div>
+	</div>
+	<table style="text-align: center" id="survey_dizziness_table" class="table table-striped table-bordered dataTable no-footer" role="grid">
+		<thead>
+			<tr role="row">
+				<th rowspan="2" colspan="1" width="22%">어떻게 아프십니까</th>
+				<th rowspan="1" colspan="3" width="39%">얼마나 자주?</th>
+				<th rowspan="1" colspan="3" width="39%">얼마나 심한지?</th>
+			</tr>
+			<tr role="row">
+				<th rowspan="1" colspan="1" width="13%">없다</th>
+				<th rowspan="1" colspan="1" width="13%">보통</th>
+				<th rowspan="1" colspan="1" width="13%">심함</th>
+				<th rowspan="1" colspan="1" width="13%">없다</th>
+				<th rowspan="1" colspan="1" width="13%">보통</th>
+				<th rowspan="1" colspan="1" width="13%">심함</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr role="row" class="odd">
+				<td>머리가 맑지 않음, 멍함</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_11" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_11" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_11" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_11" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_11" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_11" id="6" value="2" /></td>
+			</tr>
+			<tr role="row" class="even">
+				<td>건망증</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_12" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_12" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_12" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_12" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_12" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_12" id="6" value="2" /></td>
+			</tr>
+			<tr role="row" class="even">
+				<td>식후에 발생</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_13" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_13" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_13" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_13" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_13" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_13" id="6" value="2" /></td>
+			</tr>
+			<tr role="row" class="even">
+				<td>과로, 빈혈</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_14" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_14" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_14" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_14" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_14" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_14" id="6" value="2" /></td>
+			</tr>
+			<tr role="row" class="even">
+				<td>식곤증</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_15" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_15" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_15" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_15" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_15" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_15" id="6" value="2" /></td>
+			</tr>
+			<tr role="row" class="even">
+				<td>머리가 텅 빈 것 같음</td>
+				<!-- Frequency -->
+				<td><input type="radio" class="flat" name="frequency_16" id="1" value="0" checked="" required /></td>
+				<td><input type="radio" class="flat" name="frequency_16" id="2" value="1" /></td>
+				<td><input type="radio" class="flat" name="frequency_16" id="3" value="2" /></td>
+				<!-- Strength -->
+				<td><input type="radio" class="flat" name="strength_16" id="4" value="0" checked="" required/></td>
+				<td><input type="radio" class="flat" name="strength_16" id="5" value="1" /></td>
+				<td><input type="radio" class="flat" name="strength_16" id="6" value="2" /></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

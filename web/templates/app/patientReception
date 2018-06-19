@@ -1,0 +1,226 @@
+{% extends "app/base_site.html" %}
+
+{% block title %} Form Wizards {% endblock title %}
+
+{% block content %}
+<div class="right_col" role="main">
+	<div class="">
+		<div class="page-title">
+			<div class="title_left">
+				<h3>진단 지원</h3>
+			</div>
+
+			<div class="title_right">
+				<div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search for...">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">Go!</button>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="x_panel">
+					<div class="x_title">
+						<h2>환자 진단 <!-- <small>Sessions</small> --></h2>
+						<ul class="nav navbar-right panel_toolbox">
+							<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Settings 1</a>
+									</li>
+									<li><a href="#">Settings 2</a>
+									</li>
+								</ul>
+							</li>
+							<li><a class="close-link"><i class="fa fa-close"></i></a>
+							</li>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+					<div class="x_content">
+
+
+						<!-- Smart Wizard -->
+						<p>환자에게서 수집된 증상을 기반으로 병증을 판단합니다.</p>
+						<div id="wizard" class="form_wizard wizard_horizontal">
+							<ul class="wizard_steps">
+								<li>
+									<a href="#step-1">
+										<span class="step_no">1</span>
+										<span class="step_descr">
+											Step 1<br />
+											<small>환자 기본 정보 입력</small>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="#step-2">
+										<span class="step_no">2</span>
+										<span class="step_descr">
+											Step 2<br />
+											<small>증상 입력</small>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="#step-3">
+										<span class="step_no">3</span>
+										<span class="step_descr">
+											Step 3<br />
+											<small>추가 증상 입력</small>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="#step-4">
+										<span class="step_no">4</span>
+										<span class="step_descr">
+											Step 4<br />
+											<small>병증 선별</small>
+										</span>
+									</a>
+								</li>
+							</ul>
+
+							<div id="step-1">
+								<form class="form-horizontal form-label-left">
+									<div class="form-group">
+										<label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">성명 <span class="required">*</span>
+										</label>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="control-label col-md-3 col-sm-3 col-xs-12">성별</label>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<div class="btn-group" data-toggle="buttons">
+												<label class="btn btn-default active">
+													<input type="radio" name="options" id="option1"> 남성
+												</label>
+												<label class="btn btn-default">
+													<input type="radio" name="options" id="option2"> 여성
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-md-3 col-sm-3 col-xs-12">생년월일 <span class="required">*</span>
+										</label>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<!-- <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" data-inputmask="'mask': '99/99/9999'"> -->
+											<input type="text" class="form-control" data-inputmask="'mask': '99/99/9999'">
+											<span class="fa fa-user form-control-feedback right" aria-hidden="true"></span>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-md-3 col-sm-3 col-xs-12">신상정보 <span class="required">*</span>
+										</label>
+
+										<div class="col-md-3 col-sm-3 col-xs-12 has-feedback">
+											<input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="신장">
+											<span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+										</div>
+
+										<div class="col-md-3 col-sm-3 col-xs-12 has-feedback">
+											<input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="몸무게">
+											<span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-md-3 col-sm-3 col-xs-12">신상정보 <span class="required">*</span>
+										</label>
+
+										<div class="col-md-3 col-sm-3 col-xs-12 has-feedback">
+											<input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="신장">
+											<span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+										</div>
+
+										<div class="col-md-3 col-sm-3 col-xs-12 has-feedback">
+											<input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="몸무게">
+											<span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-md-3 col-sm-3 col-xs-12">신상정보 <span class="required">*</span>
+										</label>
+
+										<div class="col-md-3 col-sm-3 col-xs-12 has-feedback">
+											<input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="신장">
+											<span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+										</div>
+
+										<div class="col-md-3 col-sm-3 col-xs-12 has-feedback">
+											<input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="몸무게">
+											<span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<div id="step-2">
+								<form class="form-horizontal form-label-left">
+									<div class="form-group">
+										<label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">증상 </span>
+										</label>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<div id="step-3">
+								<h2 class="StepTitle">Step 3 Content</h2>
+								<p>
+									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+									eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+									in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+							<div id="step-4">
+								<h2 class="StepTitle">Step 4 Content</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+									in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+									in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+
+						</div>
+						<!-- End SmartWizard Content -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}
+
+{% block javascripts %}
+{{ block.super}}
+<!-- jQuery Smart Wizard -->
+<script src="/static/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+{% endblock javascripts %}
