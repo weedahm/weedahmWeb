@@ -2,743 +2,331 @@
     "survey": [
         {
             "category": "두통",
-            "statement": "압박감, 조임 통"
-        },
-        {
-            "category": "두통",
-            "statement": "박동하면서 지끈거림"
-        },
-        {
-            "category": "두통",
-            "statement": "터질 듯, 쪼개질 듯 통증"
-        },
-        {
-            "category": "두통",
-            "statement": "타박이나 외상 후유증"
-        },
-        {
-            "category": "두통",
-            "statement": "바늘로 콕콕 찌름"
-        },
-        {
-            "category": "두통",
-            "statement": "소화 장애나 오심, 구토"
-        },
-        {
-            "category": "두통",
-            "statement": "스트레스, 두근거림, 불안, 긴장,"
-        },
-        {
-            "category": "두통",
-            "statement": "분노나 혈압 상승"
-        },
-        {
-            "category": "두통",
-            "statement": "과로, 빈혈"
-        },
-        {
-            "category": "두통",
-            "statement": "뒷목과 어깨가 뻐근함"
+            "statement": [
+                "압박감, 조임 통",
+                "박동하면서 지끈거림",
+                "터질 듯, 쪼개질 듯 통증",
+                "타박이나 외상 후유증",
+                "바늘로 콕콕 찌름",
+                "소화 장애나 오심, 구토",
+                "스트레스, 두근거림, 불안, 긴장,",
+                "분노나 혈압 상승",
+                "과로, 빈혈",
+                "뒷목과 어깨가 뻐근함"
+            ]
         },
         {
             "category": "두중",
-            "statement": "머리가 맑지 않음, 멍함"
-        },
-        {
-            "category": "두중",
-            "statement": "식곤증,"
-        },
-        {
-            "category": "두중",
-            "statement": "머리가 텅 빈 것 같음"
-        },
-        {
-            "category": "두중",
-            "statement": "건망증"
-        },
-        {
-            "category": "두중",
-            "statement": "식후에 발생"
-        },
-        {
-            "category": "두중",
-            "statement": "과로, 빈혈"
+            "statement": [
+                "머리가 맑지 않음, 멍함",
+                "식곤증,",
+                "머리가 텅 빈 것 같음",
+                "건망증",
+                "식후에 발생",
+                "과로, 빈혈"
+            ]
         },
         {
             "category": "어지럼",
-            "statement": "회전성으로 핑 돈다"
-        },
-        {
-            "category": "어지럼",
-            "statement": "기립성으로 어찔하면서 눈 앞이 캄캄하다"
-        },
-        {
-            "category": "어지럼",
-            "statement": "메니에르나 이석 진단 받았다"
-        },
-        {
-            "category": "어지럼",
-            "statement": "비틀거려 바로 걷기 힘들다."
-        },
-        {
-            "category": "어지럼",
-            "statement": "붕 뜬다"
-        },
-        {
-            "category": "어지럼",
-            "statement": "눈앞이 캄캄하고 어질하다"
-        },
-        {
-            "category": "어지럼",
-            "statement": "빈혈"
-        },
-        {
-            "category": "어지럼",
-            "statement": "과로"
-        },
-        {
-            "category": "어지럼",
-            "statement": "분노, 고혈압"
-        },
-        {
-            "category": "어지럼",
-            "statement": "소화 장애, 오심 구토"
-        },
-        {
-            "category": "어지럼",
-            "statement": "저혈압"
+            "statement": [
+                "회전성으로 핑 돈다",
+                "기립성으로 어찔하면서 눈 앞이 캄캄하다",
+                "메니에르나 이석 진단 받았다",
+                "비틀거려 바로 걷기 힘들다.",
+                "붕 뜬다",
+                "눈앞이 캄캄하고 어질하다",
+                "빈혈",
+                "과로",
+                "분노, 고혈압",
+                "소화 장애, 오심 구토",
+                "저혈압"
+            ]
         },
         {
             "category": "눈",
-            "statement": "안구 통증, 뻐근 삽통, 건조, 가려움,"
+            "statement": [
+                "안구 통증, 뻐근 삽통, 건조, 가려움,"
+            ]
         },
         {
             "category": "구취",
-            "statement": "썩은 냄새"
-        },
-        {
-            "category": "구취",
-            "statement": "시큼한 냄새"
-        },
-        {
-            "category": "구취",
-            "statement": "비린 냄새"
-        },
-        {
-            "category": "구취",
-            "statement": "텁텁한 냄새"
-        },
-        {
-            "category": "구취",
-            "statement": "입이 마르면서 썩은 냄새"
-        },
-        {
-            "category": "구취",
-            "statement": "코점막 이상"
+            "statement": [
+                "썩은 냄새",
+                "시큼한 냄새",
+                "비린 냄새",
+                "텁텁한 냄새",
+                "입이 마르면서 썩은 냄새",
+                "코점막 이상"
+            ]
         },
         {
             "category": "잘체함",
-            "statement": "반복된 체함"
-        },
-        {
-            "category": "잘체함",
-            "statement": "위장 무력, 소식후 체함,"
-        },
-        {
-            "category": "잘체함",
-            "statement": "위축성위염, 맵고 짠 음식, 지나친 과로, 도한,"
-        },
-        {
-            "category": "잘체함",
-            "statement": "평소 예민, 스트레스시 발생,"
-        },
-        {
-            "category": "잘체함",
-            "statement": "사려과다, 스트레스, 과도한 음주"
+            "statement": [
+                "반복된 체함",
+                "위장 무력, 소식후 체함,",
+                "위축성위염, 맵고 짠 음식, 지나친 과로, 도한,",
+                "평소 예민, 스트레스시 발생,",
+                "사려과다, 스트레스, 과도한 음주"
+            ]
         },
         {
             "category": "전립선비대",
-            "statement": "소화기증상 동반"
+            "statement": [
+                "소화기증상 동반"
+            ]
         },
         {
             "category": "연하장애",
-            "statement": "가스 및 잦은 방구"
-        },
-        {
-            "category": "연하장애",
-            "statement": "두근, 불안, 가슴답답"
-        },
-        {
-            "category": "연하장애",
-            "statement": "입 마름"
+            "statement": [
+                "가스 및 잦은 방구",
+                "두근, 불안, 가슴답답",
+                "입 마름"
+            ]
         },
         {
             "category": "과민성대장증후군",
-            "statement": "운동장애"
-        },
-        {
-            "category": "과민성대장증후군",
-            "statement": "스트레스"
-        },
-        {
-            "category": "과민성대장증후군",
-            "statement": "두근, 불안,"
-        },
-        {
-            "category": "과민성대장증후군",
-            "statement": "하복부 더부룩, 가스감, 잦은 방구"
+            "statement": [
+                "운동장애",
+                "스트레스",
+                "두근, 불안,",
+                "하복부 더부룩, 가스감, 잦은 방구"
+            ]
         },
         {
             "category": "딸꾹질",
-            "statement": "스트레스"
-        },
-        {
-            "category": "딸꾹질",
-            "statement": "횡격막의 담적"
-        },
-        {
-            "category": "트림",
-            "statement": "소화지연, 음식물저류,"
+            "statement": [
+                "스트레스",
+                "횡격막의 담적"
+            ]
         },
         {
             "category": "트림",
-            "statement": "식도 괄약근 탄력저하"
-        },
-        {
-            "category": "트림",
-            "statement": "소화지연, 음식물저류, 가스감, 잦은 방귀, 조기포만감, 공복, 식후 시간 경과 트림(시원하지 않음) ,음식물저류"
-        },
-        {
-            "category": "트림",
-            "statement": "하복부 가스감, 하복부에서 목까지 막힘, 시원하지 않은 트림"
-        },
-        {
-            "category": "트림",
-            "statement": "식사중 계속되는 트림, 목까지의 치받아 작위적인 트림, 구토"
-        },
-        {
-            "category": "트림",
-            "statement": "두근거림, 가슴답답,"
-        },
-        {
-            "category": "트림",
-            "statement": "급식후 트림"
+            "statement": [
+                "소화지연, 음식물저류,",
+                "식도 괄약근 탄력저하",
+                "소화지연, 음식물저류, 가스감, 잦은 방귀, 조기포만감, 공복, 식후 시간 경과 트림(시원하지 않음) ,음식물저류",
+                "하복부 가스감, 하복부에서 목까지 막힘, 시원하지 않은 트림",
+                "식사중 계속되는 트림, 목까지의 치받아 작위적인 트림, 구토",
+                "두근거림, 가슴답답,",
+                "급식후 트림"
+            ]
         },
         {
             "category": "속쓰림",
-            "statement": "스트레스"
-        },
-        {
-            "category": "속쓰림",
-            "statement": "새벽, 공복 속쓰림,"
-        },
-        {
-            "category": "속쓰림",
-            "statement": "과로, 스트레스, 화병"
-        },
-        {
-            "category": "속쓰림",
-            "statement": "식후"
-        },
-        {
-            "category": "속쓰림",
-            "statement": "가슴쓰림 호소, 두근불안, 가슴답답"
+            "statement": [
+                "스트레스",
+                "새벽, 공복 속쓰림,",
+                "과로, 스트레스, 화병",
+                "식후",
+                "가슴쓰림 호소, 두근불안, 가슴답답"
+            ]
         },
         {
             "category": "목이물감",
-            "statement": "반복된 체함"
-        },
-        {
-            "category": "목이물감",
-            "statement": "가슴답답, 두근불안,"
-        },
-        {
-            "category": "목이물감",
-            "statement": "스트레스, 화남,"
-        },
-        {
-            "category": "목이물감",
-            "statement": "후비루 증상"
-        },
-        {
-            "category": "목이물감",
-            "statement": "인후, 후두부의 담저,"
-        },
-        {
-            "category": "목이물감",
-            "statement": "가래발생"
+            "statement": [
+                "반복된 체함",
+                "가슴답답, 두근불안,",
+                "스트레스, 화남,",
+                "후비루 증상",
+                "인후, 후두부의 담저,",
+                "가래발생"
+            ]
         },
         {
             "category": "구토",
-            "statement": "위경련, 위운동 장애,"
-        },
-        {
-            "category": "구토",
-            "statement": "메니에르, 어지러움 동반,"
-        },
-        {
-            "category": "구토",
-            "statement": "침이 자주 고임"
-        },
-        {
-            "category": "구토",
-            "statement": "스트레스, 위 운동경련,"
-        },
-        {
-            "category": "구토",
-            "statement": "음주"
-        },
-        {
-            "category": "구토",
-            "statement": "쓴맛이 올라옴"
-        },
-        {
-            "category": "구토",
-            "statement": "스트레스"
+            "statement": [
+                "위경련, 위운동 장애,",
+                "메니에르, 어지러움 동반,",
+                "침이 자주 고임",
+                "스트레스, 위 운동경련,",
+                "음주",
+                "쓴맛이 올라옴",
+                "스트레스"
+            ]
         },
         {
             "category": "역류",
-            "statement": "상복부 가스감"
-        },
-        {
-            "category": "역류",
-            "statement": "상복부 가스감"
-        },
-        {
-            "category": "역류",
-            "statement": "상복부 가스감, 연하장애,"
-        },
-        {
-            "category": "역류",
-            "statement": "상복부 가스감"
-        },
-        {
-            "category": "역류",
-            "statement": "속쓰림, 과식,폭식"
-        },
-        {
-            "category": "역류",
-            "statement": "속쓰림"
-        },
-        {
-            "category": "역류",
-            "statement": "위산역류"
+            "statement": [
+                "상복부 가스감",
+                "상복부 가스감, 연하장애,",
+                "속쓰림, 과식,폭식",
+                "속쓰림",
+                "위산역류"
+            ]
         },
         {
             "category": "복부팽만감",
-            "statement": "입마름"
-        },
-        {
-            "category": "복부팽만감",
-            "statement": "손발저림"
-        },
-        {
-            "category": "복부팽만감",
-            "statement": "만성변비"
-        },
-        {
-            "category": "복부팽만감",
-            "statement": "과민성"
-        },
-        {
-            "category": "복부팽만감",
-            "statement": "감각저하,복부 운동감 저하"
-        },
-        {
-            "category": "복부팽만감",
-            "statement": "살이 잘 빠짐,입에서 쓴맛이 난다"
-        },
-        {
-            "category": "복부팽만감",
-            "statement": "감염,손발저림,전신통"
-        },
-        {
-            "category": "복부팽만감",
-            "statement": "스트레스"
-        },
-        {
-            "category": "복부팽만감",
-            "statement": "스트레스"
-        },
-        {
-            "category": "복부팽만감",
-            "statement": "스트레스"
+            "statement": [
+                "입마름",
+                "손발저림",
+                "만성변비",
+                "과민성",
+                "감각저하,복부 운동감 저하",
+                "살이 잘 빠짐,입에서 쓴맛이 난다",
+                "감염,손발저림,전신통",
+                "스트레스"
+            ]
         },
         {
             "category": "변비",
-            "statement": "갑작스런 복통,복부팽만"
-        },
-        {
-            "category": "변비",
-            "statement": "갑작스런 복통,하혈"
-        },
-        {
-            "category": "변비",
-            "statement": "복통,오한,발열"
-        },
-        {
-            "category": "변비",
-            "statement": "근육경화"
-        },
-        {
-            "category": "변비",
-            "statement": "과로"
-        },
-        {
-            "category": "변비",
-            "statement": "치질"
-        },
-        {
-            "category": "변비",
-            "statement": "치질,입마름,마른형"
-        },
-        {
-            "category": "변비",
-            "statement": "치질"
-        },
-        {
-            "category": "변비",
-            "statement": "장경련"
-        },
-        {
-            "category": "변비",
-            "statement": "하복부 가스"
-        },
-        {
-            "category": "변비",
-            "statement": "숙변"
-        },
-        {
-            "category": "변비",
-            "statement": "심한 가스감, 잦은 방구"
-        },
-        {
-            "category": "변비",
-            "statement": "스트레스"
-        },
-        {
-            "category": "변비",
-            "statement": "세로토닌 분비저하, 운동력 감소"
-        },
-        {
-            "category": "변비",
-            "statement": "장경련,상열감"
-        },
-        {
-            "category": "변비",
-            "statement": "장경련,스트레스"
-        },
-        {
-            "category": "변비",
-            "statement": "스트레스"
-        },
-        {
-            "category": "변비",
-            "statement": "스트레스, 과로"
-        },
-        {
-            "category": "변비",
-            "statement": "배변장애"
-        },
-        {
-            "category": "변비",
-            "statement": "직장괄약근무력,과로"
-        },
-        {
-            "category": "변비",
-            "statement": "두근,불안,가슴답답"
-        },
-        {
-            "category": "변비",
-            "statement": "입마름,관절뻣뻣"
-        },
-        {
-            "category": "변비",
-            "statement": "협하통증"
-        },
-        {
-            "category": "변비",
-            "statement": "숙변"
-        },
-        {
-            "category": "변비",
-            "statement": "입마름,관절뻣뻣,가슴답답,두근,불안"
+            "statement": [
+                "갑작스런 복통,복부팽만",
+                "갑작스런 복통,하혈",
+                "복통,오한,발열",
+                "근육경화",
+                "과로",
+                "치질",
+                "치질,입마름,마른형",
+                "장경련",
+                "하복부 가스",
+                "숙변",
+                "심한 가스감, 잦은 방구",
+                "스트레스",
+                "세로토닌 분비저하, 운동력 감소",
+                "장경련,상열감",
+                "장경련,스트레스",
+                "스트레스, 과로",
+                "배변장애",
+                "직장괄약근무력,과로",
+                "두근,불안,가슴답답",
+                "입마름,관절뻣뻣",
+                "협하통증",
+                "입마름,관절뻣뻣,가슴답답,두근,불안"
+            ]
         },
         {
             "category": "설사",
-            "statement": "궤양성대장염"
-        },
-        {
-            "category": "설사",
-            "statement": "크론씨병"
-        },
-        {
-            "category": "설사",
-            "statement": "크론씨병,협하통"
-        },
-        {
-            "category": "설사",
-            "statement": "스트레스"
-        },
-        {
-            "category": "설사",
-            "statement": "입마름,무릎이 시림"
-        },
-        {
-            "category": "설사",
-            "statement": "과도한알콜섭취,독성음식 섭취"
-        },
-        {
-            "category": "설사",
-            "statement": "과도한알콜섭취,독성음식 섭취"
+            "statement": [
+                "궤양성대장염",
+                "크론씨병",
+                "크론씨병,협하통",
+                "입마름,무릎이 시림",
+                "과도한알콜섭취,독성음식 섭취"
+            ]
         },
         {
             "category": "위축성위염",
-            "statement": "장상피화생"
-        },
-        {
-            "category": "위축성위염",
-            "statement": "입마름,관절뻣뻣"
-        },
-        {
-            "category": "위축성위염",
-            "statement": "두근,불안,가슴답답"
+            "statement": [
+                "장상피화생",
+                "입마름,관절뻣뻣",
+                "두근,불안,가슴답답"
+            ]
         },
         {
             "category": "가슴답답",
-            "statement": "스트레스"
-        },
-        {
-            "category": "가슴답답",
-            "statement": "역류"
-        },
-        {
-            "category": "가슴답답",
-            "statement": "가슴통증"
-        },
-        {
-            "category": "가슴답답",
-            "statement": "저체온"
-        },
-        {
-            "category": "가슴답답",
-            "statement": "공황장애, 폐쇄공포증,"
-        },
-        {
-            "category": "가슴답답",
-            "statement": "호흡장애, 천식증상,"
-        },
-        {
-            "category": "가슴답답",
-            "statement": "위장 체부의 담적"
-        },
-        {
-            "category": "가슴답답",
-            "statement": "숙변, 하복부 가스감,"
-        },
-        {
-            "category": "가슴답답",
-            "statement": "사려 과도나 스트레스, 과도한 음주,"
-        },
-        {
-            "category": "가슴답답",
-            "statement": "스트레스로 인해 심장이 위축되고, 이로 인해 위장으로의 혈액,입 마름"
+            "statement": [
+                "스트레스",
+                "역류",
+                "가슴통증",
+                "저체온",
+                "공황장애, 폐쇄공포증,",
+                "호흡장애, 천식증상,",
+                "위장 체부의 담적",
+                "숙변, 하복부 가스감,",
+                "사려 과도나 스트레스, 과도한 음주,",
+                "스트레스로 인해 심장이 위축되고, 이로 인해 위장으로의 혈액,입 마름"
+            ]
         },
         {
             "category": "복통",
-            "statement": "명치부위 쪼임/뻐근"
-        },
-        {
-            "category": "복통",
-            "statement": "쓰리는 통증"
-        },
-        {
-            "category": "복통",
-            "statement": "콕콕쑤심,스트레스,"
-        },
-        {
-            "category": "복통",
-            "statement": "더부룩하면서 가스차는 통증(중완부위),중완부위 식후 은은한 통증,"
-        },
-        {
-            "category": "복통",
-            "statement": "쌀쌀한 통증(배꼽주변),쥐어짜는 통증,"
+            "statement": [
+                "명치부위 쪼임/뻐근",
+                "쓰리는 통증",
+                "콕콕쑤심,스트레스,",
+                "더부룩하면서 가스차는 통증(중완부위),중완부위 식후 은은한 통증,",
+                "쌀쌀한 통증(배꼽주변),쥐어짜는 통증,"
+            ]
         },
         {
             "category": "자주보는 소변",
-            "statement": "과민성 방광"
+            "statement": [
+                "과민성 방광"
+            ]
         },
         {
             "category": "방광염",
-            "statement": "반복되는 방광염"
+            "statement": [
+                "반복되는 방광염"
+            ]
         },
         {
             "category": "시원하지 않은 소변",
-            "statement": "담 독소로 인한 방광 경화,카랄세포 비활성,"
-        },
-        {
-            "category": "시원하지 않은 소변",
-            "statement": "방광 평할근 무력"
-        },
-        {
-            "category": "시원하지 않은 소변",
-            "statement": "방광 평할근 무력"
+            "statement": [
+                "담 독소로 인한 방광 경화,카랄세포 비활성,",
+                "방광 평할근 무력"
+            ]
         },
         {
             "category": "위마비",
-            "statement": "위장 평활근 기능저하로 인한 소화장애(소화운동장애)"
-        },
-        {
-            "category": "위마비",
-            "statement": "근 무력으로 인한 배출지연"
-        },
-        {
-            "category": "위마비",
-            "statement": "위 효소, 위산 분비 저하"
-        },
-        {
-            "category": "위마비",
-            "statement": "담즙분비 기능 저하"
-        },
-        {
-            "category": "위마비",
-            "statement": "사할세포 비활성"
-        },
-        {
-            "category": "위마비",
-            "statement": "사할세포 비활성"
-        },
-        {
-            "category": "위마비",
-            "statement": "사할세포 비활성"
-        },
-        {
-            "category": "위마비",
-            "statement": "미주신경 장애"
-        },
-        {
-            "category": "위마비",
-            "statement": "NO분비감소로 인한 배출지연,조기포만감,"
+            "statement": [
+                "위장 평활근 기능저하로 인한 소화장애(소화운동장애)",
+                "근 무력으로 인한 배출지연",
+                "위 효소, 위산 분비 저하",
+                "담즙분비 기능 저하",
+                "사할세포 비활성",
+                "미주신경 장애",
+                "NO분비감소로 인한 배출지연,조기포만감,"
+            ]
         },
         {
             "category": "담석",
-            "statement": "스트레스, 화병, 과로등으로 간 기능저하로 인한 담즙분비 저하"
-        },
-        {
-            "category": "담석",
-            "statement": "간세포 손상으로 인한 담즙분비 저하"
-        },
-        {
-            "category": "담석",
-            "statement": "지방대사및 빌리루빈 대사 장애"
-        },
-        {
-            "category": "담석",
-            "statement": "담즙분비 성분 이상"
-        },
-        {
-            "category": "담석",
-            "statement": "과로, 지나친 음주로 인한 간 기능 저하로 인한 담즙 탁도 증가"
-        },
-        {
-            "category": "담석",
-            "statement": "간장과 담관에 담 독소 저류로 인한 담즙 탁도 증가"
-        },
-        {
-            "category": "담석",
-            "statement": "콜레스테롤로 인한 담즙 탁도 증가"
-        },
-        {
-            "category": "담석",
-            "statement": "십이지장 경화로 인한 담즙 역류 및 분비 장애"
+            "statement": [
+                "스트레스, 화병, 과로등으로 간 기능저하로 인한 담즙분비 저하",
+                "간세포 손상으로 인한 담즙분비 저하",
+                "지방대사및 빌리루빈 대사 장애",
+                "담즙분비 성분 이상",
+                "과로, 지나친 음주로 인한 간 기능 저하로 인한 담즙 탁도 증가",
+                "간장과 담관에 담 독소 저류로 인한 담즙 탁도 증가",
+                "콜레스테롤로 인한 담즙 탁도 증가",
+                "십이지장 경화로 인한 담즙 역류 및 분비 장애"
+            ]
         },
         {
             "category": "베체트",
-            "statement": "눈, 입주위 궤양"
-        },
-        {
-            "category": "베체트",
-            "statement": "성기 주변 궤양"
-        },
-        {
-            "category": "베체트",
-            "statement": "신체 허약"
+            "statement": [
+                "눈, 입주위 궤양",
+                "성기 주변 궤양",
+                "신체 허약"
+            ]
         },
         {
             "category": "뇌졸증",
-            "statement": "고혈당, 고지방,"
-        },
-        {
-            "category": "뇌졸증",
-            "statement": "두근, 불안,과로"
-        },
-        {
-            "category": "뇌졸증",
-            "statement": "손발저림"
-        },
-        {
-            "category": "뇌졸증",
-            "statement": "가슴답답 및 가슴통증"
-        },
-        {
-            "category": "뇌졸증",
-            "statement": "타박으로 인한 어혈,스트레스로 인한 고혈압,"
-        },
-        {
-            "category": "뇌졸증",
-            "statement": "뇌출혈,고혈압,"
-        },
-        {
-            "category": "뇌졸증",
-            "statement": "뇌출혈"
-        },
-        {
-            "category": "뇌졸증",
-            "statement": "지속적인 고혈압으로 인한 뇌동맥류"
+            "statement": [
+                "고혈당, 고지방,",
+                "두근, 불안,과로",
+                "손발저림",
+                "가슴답답 및 가슴통증",
+                "타박으로 인한 어혈,스트레스로 인한 고혈압,",
+                "뇌출혈,고혈압,",
+                "뇌출혈",
+                "지속적인 고혈압으로 인한 뇌동맥류"
+            ]
         },
         {
             "category": "당뇨병",
-            "statement": "인슐린 생산 및 분비 저하"
-        },
-        {
-            "category": "당뇨병",
-            "statement": "스트레스 및 과로로 인한 진액손상"
-        },
-        {
-            "category": "당뇨병",
-            "statement": "식단조절실패, 운동부족"
-        },
-        {
-            "category": "당뇨병",
-            "statement": "인슐린 기능장애"
-        },
-        {
-            "category": "당뇨병",
-            "statement": "담 독로 인한 인슐린 저항성 증가(조직세포막에 노폐물 오염으로 인슐린 감지 기능 저하), 비만"
+            "statement": [
+                "인슐린 생산 및 분비 저하",
+                "스트레스 및 과로로 인한 진액손상",
+                "식단조절실패, 운동부족",
+                "인슐린 기능장애",
+                "담 독로 인한 인슐린 저항성 증가(조직세포막에 노폐물 오염으로 인슐린 감지 기능 저하), 비만"
+            ]
         },
         {
             "category": "갱년기",
-            "statement": "화병및 과로"
-        },
-        {
-            "category": "갱년기",
-            "statement": "스트레스"
-        },
-        {
-            "category": "갱년기",
-            "statement": "뇌하수체 기능 항진"
-        },
-        {
-            "category": "갱년기",
-            "statement": "부신, 간, 유방기능의 활성"
+            "statement": [
+                "화병및 과로",
+                "스트레스",
+                "뇌하수체 기능 항진",
+                "부신, 간, 유방기능의 활성"
+            ]
         },
         {
             "category": "가슴통증",
-            "statement": "스트레스"
-        },
-        {
-            "category": "가슴통증",
-            "statement": "저체온,심박출력 저하,"
+            "statement": [
+                "스트레스",
+                "저체온,심박출력 저하,"
+            ]
         }
     ]
 }

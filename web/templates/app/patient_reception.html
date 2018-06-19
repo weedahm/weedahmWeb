@@ -1,8 +1,4 @@
-{% extends "app/base_site.html" %}
-
-{% block title %} Form Wizards {% endblock title %}
-
-{% block content %}
+{% extends "app/base_site.html" %} {% block title %} Form Wizards {% endblock title %} {% block content %}
 <div class="right_col" role="main">
 	<div class="">
 		<div class="page-title">
@@ -27,7 +23,9 @@
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="x_panel">
 					<div class="x_title">
-						<h2>환자 기본 정보 입력 <!-- <small>Sessions</small> --></h2>
+						<h2>환자 기본 정보 입력
+							<!-- <small>Sessions</small> -->
+						</h2>
 						<div class="clearfix"></div>
 					</div>
 					<div class="x_content">
@@ -40,7 +38,8 @@
 										<a href="#step-1">
 											<span class="step_no">1</span>
 											<span class="step_descr">
-												Step 1<br />
+												Step 1
+												<br />
 												<small>환자 기본 정보 입력</small>
 											</span>
 										</a>
@@ -49,7 +48,8 @@
 										<a href="#step-2">
 											<span class="step_no">2</span>
 											<span class="step_descr">
-												Step 2<br />
+												Step 2
+												<br />
 												<small>설문지 작성</small>
 											</span>
 										</a>
@@ -58,7 +58,8 @@
 										<a href="#step-3">
 											<span class="step_no">3</span>
 											<span class="step_descr">
-												Step 3<br />
+												Step 3
+												<br />
 												<small>추가 증상 입력</small>
 											</span>
 										</a>
@@ -76,12 +77,16 @@
 								<div id="step-3">
 									<h2 class="StepTitle">Step 3 Content</h2>
 									<p>
-										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-										eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+										laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+										deserunt mollit anim id est laborum.
 									</p>
 									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-										in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+										aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+										occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 									</p>
 								</div>
 							</div>
@@ -93,10 +98,6 @@
 		</div>
 	</div>
 </div>
-{% endblock content %}
-
-{% block javascripts %}
-{{ block.super}}
+{% endblock content %} {% block javascripts %} {{ block.super}}
 <!-- jQuery Smart Wizard -->
-<script src="/static/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
-{% endblock javascripts %}
+<script src="/static/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script> {% endblock javascripts %}

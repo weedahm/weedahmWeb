@@ -1831,18 +1831,23 @@ function diff_years(dt2, dt1) {
 }
 
 // banana 180618
-function init_survey() {
-    $("#survey_headache_table").hide()
-    $("#survey_dizziness_table").hide()
+function init_survey() {    
+    $(".survey-table").hide()
+    // $("#survey_headache_table").hide()
+    // $("#survey_dizziness_table").hide()
 
-    $("input[name=headache_radio]").change(function() {
+    $("input[class=survey-radio]").change(function() {
         var value = $(this).val();
+        var classname = $(this).attr('class')
+        console.log(classname)
         if(value == "y") {
+            console.log("y")
             $("#survey_headache_table").show()
             var old_height = $('.stepContainer').height()
             var new_height = old_height + $("#survey_headache_table").height();
             $('.stepContainer').height(new_height)
         } else {
+            console.log("n")
             $("#survey_headache_table").hide()
             var old_height = $('.stepContainer').height()
             var new_height = old_height - $("#survey_headache_table").height();
@@ -1850,20 +1855,20 @@ function init_survey() {
         }
     });
 
-    $("input[name=dizziness_radio]").change(function() {
-        var value = $(this).val();
-        if(value == "y") {
-            $("#survey_dizziness_table").show()
-            var old_height = $('.stepContainer').height()
-            var new_height = old_height + $("#survey_dizziness_table").height();
-            $('.stepContainer').height(new_height)
-        } else {
-            $("#survey_dizziness_table").hide()
-            var old_height = $('.stepContainer').height()
-            var new_height = old_height - $("#survey_dizziness_table").height();
-            $('.stepContainer').height(new_height)
-        }
-    }); 
+    // $("input[name=dizziness_radio]").change(function() {
+    //     var value = $(this).val();
+    //     if(value == "y") {
+    //         $("#survey_dizziness_table").show()
+    //         var old_height = $('.stepContainer').height()
+    //         var new_height = old_height + $("#survey_dizziness_table").height();
+    //         $('.stepContainer').height(new_height)
+    //     } else {
+    //         $("#survey_dizziness_table").hide()
+    //         var old_height = $('.stepContainer').height()
+    //         var new_height = old_height - $("#survey_dizziness_table").height();
+    //         $('.stepContainer').height(new_height)
+    //     }
+    // }); 
 }
 
 function init_daterangepicker_reservation() {
