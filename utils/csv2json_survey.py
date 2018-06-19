@@ -1,6 +1,6 @@
 import re, json
 
-file = open("survey.txt", "r")
+file = open("survey.txt", "r", encoding='utf-8')
 json_data = {}
 json_data['survey'] = []
 while True:
@@ -14,4 +14,4 @@ while True:
 file.close()
 
 with open('survey.json', 'w') as outfile:
-	json.dump(json_data, outfile)
+	json.dump(json_data, outfile, ensure_ascii=False, indent=4, skipkeys=True)
