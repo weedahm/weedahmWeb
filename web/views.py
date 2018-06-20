@@ -40,7 +40,8 @@ class IndexView(LoginRequired, TemplateView):
 	template_name = 'app/index.html'
 
 def patientReceptionPost(request):
-	logging.debug(request.POST)
+	for key, value in request.POST.items() :
+		print(key, ':', value)
 	return HttpResponseRedirect(reverse("app:index"))
 
 class patientReceptionView(LoginRequired, TemplateView):
