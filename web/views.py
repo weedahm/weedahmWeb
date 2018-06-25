@@ -9,6 +9,10 @@ from django.contrib.auth.models import User
 from django.contrib import auth
 from django.contrib.auth.mixins import LoginRequiredMixin
 
+# Models
+from .models import Survey
+from django.core.files.base import ContentFile
+
 import os
 import logging
 import json
@@ -40,8 +44,52 @@ class IndexView(LoginRequired, TemplateView):
 	template_name = 'app/index.html'
 
 def patientReceptionPost(request):
-	for key, value in request.POST.items() :
-		print(key, ':', value)
+	survey_list = []
+	for key, value in request.POST.items():
+		try:
+			kind, category, question = key.split("-")
+		except ValueError as e:
+			print(e)
+			continue
+		target_survey = [item for item in survey_list if 'category' in item and item['category'] == category]		
+		
+		if len(target_survey) > 0:
+			for a_survey in target_survey:
+				target_statement = [item for item in a_survey['statement'] if 'question' in item and item['question'] == question]
+				if len(target_statement) > 0:
+					for a_statement in target_statement:
+						if kind == 'frequency':
+							a_statement['frequency'] = int(value)
+						elif kind == 'strength':
+							a_statement['strength'] = int(value)
+				else:
+					new_statement_dict ={}
+					new_statement_dict['question'] = question
+					if kind == 'frequency':
+						new_statement_dict['frequency'] = int(value)
+					elif kind == 'strength':
+						new_statement_dict['strength'] = int(value)
+					a_survey['statement'].append(new_statement_dict)
+		else:
+			new_survey_dict = {}
+			new_survey_dict['category'] = category
+			new_statement_dict = {}
+			new_statement_dict['question'] = question
+			if kind == 'frequency':
+				new_statement_dict['frequency'] = int(value)
+			elif kind == 'strength':
+				new_statement_dict['strength'] = int(value)
+			new_survey_dict['statement'] = []
+			new_survey_dict['statement'].append(new_statement_dict)
+			survey_list.append(new_survey_dict)
+	survey = {}
+	survey['survey'] = survey_list
+	myfile = ContentFile("test")
+	json.dump(survey, myfile)
+	
+	s = Survey(ref_file=myfile)
+	s.save()
+
 	return HttpResponseRedirect(reverse("app:index"))
 
 class patientReceptionView(LoginRequired, TemplateView):

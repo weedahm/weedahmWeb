@@ -26,7 +26,7 @@ SECRET_KEY = '7sl2n#$5petfao0gc8z5b6)&@1q)6n^p-1npze-5n!b5(%@r*w'
 DEBUG = True
 
 ALLOWED_HOSTS = ["192.168.0.23", "192.168.0.25"]
-AUTH_USER_MODEL = 'web.Person'
+AUTH_USER_MODEL = 'web.User'
 
 # Application definition
 
