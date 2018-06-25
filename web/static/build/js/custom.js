@@ -1807,15 +1807,15 @@ function init_daterangepicker_single_call() {
     });
 
     // banana 180618
-    $('#patient_birthday').daterangepicker({
+    $('#patient-birthday').daterangepicker({
         singleDatePicker: true,
         singleClasses: "picker_4"
     }, function(start, end, label) {
         var diff = diff_years(new Date(), new Date(end));
-        document.getElementById("patient_age").value = "만 "+diff+"세";
+        document.getElementById("patient-age").value = "만 "+diff+"세";
     });
     
-    $('#patient_receiving_date').daterangepicker({
+    $('#patient-receiving-date').daterangepicker({
         singleDatePicker: true,
         singleClasses: "picker_4"
     }, function(start, end, label) {

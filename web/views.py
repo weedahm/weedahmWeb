@@ -10,7 +10,7 @@ from django.contrib import auth
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Models
-from .models import Survey
+from .models import Survey, Patient
 from django.core.files.base import ContentFile
 
 import os
@@ -44,6 +44,24 @@ class IndexView(LoginRequired, TemplateView):
 	template_name = 'app/index.html'
 
 def patientReceptionPost(request):
+	patient_name = request.POST['patient-name']
+	patient_gender = request.POST['patient-gender']
+	patient_birthday = request.POST['patient-birthday']
+	patient_age = request.POST['patient-age']
+	patient_height = request.POST['patient-height']
+	patient_weight = request.POST['patient-weight']
+	patient_receiving_date = request.POST['patient-receiving-date']
+	patient_surgical_history = request.POST['patient-surgical-history']
+	patient_medicine_history = request.POST['patient-medicine-history']
+
+	print(request.POST['patient-birthday'])
+	
+	# p = Patient(
+	# 	name = patient_name,
+	# 	gender = patient_gender,
+	# 	# ...
+	# )
+
 	survey_list = []
 	for key, value in request.POST.items():
 		try:
@@ -76,7 +94,7 @@ def patientReceptionPost(request):
 			new_statement_dict = {}
 			new_statement_dict['question'] = question
 			if kind == 'frequency':
-				new_statement_dict['frequency'] = int(value)
+				new_statement_dict[' jfrequency'] = int(value)
 			elif kind == 'strength':
 				new_statement_dict['strength'] = int(value)
 			new_survey_dict['statement'] = []
@@ -84,12 +102,8 @@ def patientReceptionPost(request):
 			survey_list.append(new_survey_dict)
 	survey = {}
 	survey['survey'] = survey_list
-	myfile = ContentFile("test")
-	json.dump(survey, myfile)
-	
-	s = Survey(ref_file=myfile)
+	s = Survey(survey_json=survey)
 	s.save()
-
 	return HttpResponseRedirect(reverse("app:index"))
 
 class patientReceptionView(LoginRequired, TemplateView):
