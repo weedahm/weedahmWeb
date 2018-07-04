@@ -25,7 +25,7 @@ SECRET_KEY = '7sl2n#$5petfao0gc8z5b6)&@1q)6n^p-1npze-5n!b5(%@r*w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.0.23", "192.168.0.25"]
+ALLOWED_HOSTS = ["192.168.0.23", "192.168.0.25", "127.0.0.1"]
 AUTH_USER_MODEL = 'web.User'
 
 # Application definition
