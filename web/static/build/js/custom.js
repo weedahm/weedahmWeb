@@ -53,7 +53,6 @@ var CURRENT_URL = window.location.href.split('#')[0].split('?')[0],
     $NAV_MENU = $('.nav_menu'),
     $FOOTER = $('footer');
 
-
 // Sidebar
 function init_sidebar() {
     // TODO: This is some kind of easy fix, maybe we can improve this
@@ -118,8 +117,6 @@ function init_sidebar() {
     });
 
     // check active menu
-    $SIDEBAR_MENU.find('a[href="' + CURRENT_URL + '"]').parent('li').addClass('current-page');
-
     $SIDEBAR_MENU.find('a').filter(function() {
         return this.href == CURRENT_URL;
     }).parent('li').addClass('current-page').parents('ul').slideDown(function() {
@@ -1782,7 +1779,6 @@ function init_daterangepicker_right() {
 }
 
 function init_daterangepicker_single_call() {
-
     if (typeof($.fn.daterangepicker) === 'undefined') {
         return;
     }
@@ -1815,13 +1811,13 @@ function init_daterangepicker_single_call() {
         document.getElementById("patient-age").value = "만 "+diff+"세";
     });
     
-    $('#patient-receiving-date').daterangepicker({
-        singleDatePicker: true,
-        singleClasses: "picker_4"
-    }, function(start, end, label) {
-        console.log(start.toISOString(), end.toISOString(), label);
-    });
-
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1;
+    var yyyy = today.getFullYear();
+    today = yyyy + '/' + mm + '/' + dd
+    console.log(today)
+    $('#patient-receiving-date').val(today)
 }
 
 // banana 180618

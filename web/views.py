@@ -13,9 +13,11 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Survey, Patient
 from django.core.files.base import ContentFile
 
+# Basic
 import os
 import logging
 import json
+from datetime import datetime
 logging.basicConfig(level=logging.DEBUG)
 
 class LoginView(TemplateView):
@@ -44,66 +46,63 @@ class IndexView(LoginRequired, TemplateView):
 	template_name = 'app/index.html'
 
 def patientReceptionPost(request):
-	patient_name = request.POST['patient-name']
-	patient_gender = request.POST['patient-gender']
-	patient_birthday = request.POST['patient-birthday']
-	patient_age = request.POST['patient-age']
-	patient_height = request.POST['patient-height']
-	patient_weight = request.POST['patient-weight']
-	patient_receiving_date = request.POST['patient-receiving-date']
-	patient_surgical_history = request.POST['patient-surgical-history']
-	patient_medicine_history = request.POST['patient-medicine-history']
-
-	print(request.POST['patient-birthday'])
+	patient_name = request.POST.get('patient-name')
+	patient_gender = request.POST.get('patient-gender')
+	patient_birthday = request.POST.get('patient-birthday')
+	patient_address = request.POST.get('patient-address')
+	patient_phone_number = request.POST.get('patient-phone-number')
 	
-	# p = Patient(
-	# 	name = patient_name,
-	# 	gender = patient_gender,
-	# 	# ...
-	# )
+	p = Patient(
+		name = patient_name,
+		gender = patient_gender,
+		date_of_birth = datetime.strptime(patient_birthday, "%d/%m/%Y"),
+		address = patient_address,
+		phone_number = patient_phone_number,
+	)
+	p.save()
 
-	survey_list = []
-	for key, value in request.POST.items():
-		try:
-			kind, category, question = key.split("-")
-		except ValueError as e:
-			print(e)
-			continue
-		target_survey = [item for item in survey_list if 'category' in item and item['category'] == category]		
+	# survey_list = []
+	# for key, value in request.POST.items():
+	# 	try:
+	# 		kind, category, question = key.split("-")
+	# 	except ValueError as e:
+	# 		print(e)
+	# 		continue
+	# 	target_survey = [item for item in survey_list if 'category' in item and item['category'] == category]		
 		
-		if len(target_survey) > 0:
-			for a_survey in target_survey:
-				target_statement = [item for item in a_survey['statement'] if 'question' in item and item['question'] == question]
-				if len(target_statement) > 0:
-					for a_statement in target_statement:
-						if kind == 'frequency':
-							a_statement['frequency'] = int(value)
-						elif kind == 'strength':
-							a_statement['strength'] = int(value)
-				else:
-					new_statement_dict ={}
-					new_statement_dict['question'] = question
-					if kind == 'frequency':
-						new_statement_dict['frequency'] = int(value)
-					elif kind == 'strength':
-						new_statement_dict['strength'] = int(value)
-					a_survey['statement'].append(new_statement_dict)
-		else:
-			new_survey_dict = {}
-			new_survey_dict['category'] = category
-			new_statement_dict = {}
-			new_statement_dict['question'] = question
-			if kind == 'frequency':
-				new_statement_dict[' jfrequency'] = int(value)
-			elif kind == 'strength':
-				new_statement_dict['strength'] = int(value)
-			new_survey_dict['statement'] = []
-			new_survey_dict['statement'].append(new_statement_dict)
-			survey_list.append(new_survey_dict)
-	survey = {}
-	survey['survey'] = survey_list
-	s = Survey(survey_json=survey)
-	s.save()
+	# 	if len(target_survey) > 0:
+	# 		for a_survey in target_survey:
+	# 			target_statement = [item for item in a_survey['statement'] if 'question' in item and item['question'] == question]
+	# 			if len(target_statement) > 0:
+	# 				for a_statement in target_statement:
+	# 					if kind == 'frequency':
+	# 						a_statement['frequency'] = int(value)
+	# 					elif kind == 'strength':
+	# 						a_statement['strength'] = int(value)
+	# 			else:
+	# 				new_statement_dict ={}
+	# 				new_statement_dict['question'] = question
+	# 				if kind == 'frequency':
+	# 					new_statement_dict['frequency'] = int(value)
+	# 				elif kind == 'strength':
+	# 					new_statement_dict['strength'] = int(value)
+	# 				a_survey['statement'].append(new_statement_dict)
+	# 	else:
+	# 		new_survey_dict = {}
+	# 		new_survey_dict['category'] = category
+	# 		new_statement_dict = {}
+	# 		new_statement_dict['question'] = question
+	# 		if kind == 'frequency':
+	# 			new_statement_dict[' jfrequency'] = int(value)
+	# 		elif kind == 'strength':
+	# 			new_statement_dict['strength'] = int(value)
+	# 		new_survey_dict['statement'] = []
+	# 		new_survey_dict['statement'].append(new_statement_dict)
+	# 		survey_list.append(new_survey_dict)
+	# survey = {}
+	# survey['survey'] = survey_list
+	# s = Survey(survey_json=survey)
+	# s.save()
 	return HttpResponseRedirect(reverse("app:index"))
 
 class patientReceptionView(LoginRequired, TemplateView):
@@ -139,3 +138,6 @@ class diagnoseView(LoginRequired, TemplateView):
 #     load_template = request.path.split('/')[-1]
 #     template = loader.get_template('app/' + load_template)
 #     return HttpResponse(template.render(context, request))
+
+class patientDataMiningView(LoginRequired, TemplateView):
+	template_name = 'app/patient_data_mining.html'

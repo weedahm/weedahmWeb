@@ -32,14 +32,12 @@
         <li><a><i class="fa fa-hospital-o"></i> 환자관리 <span class="fa fa-chevron-down"></span></a>
           <ul class="nav child_menu">
             <li><a href="{% url 'app:patientReception' %}">환자 접수</a></li>
+            <li><a href="{% url 'app:patientDataMining' %}">환자 정보 입력</a></li>
           </ul>
         </li>
         <li><a><i class="fa fa-edit"></i> 진단지원 <span class="fa fa-chevron-down"></span></a>
           <ul class="nav child_menu">
             <li><a href="{% url 'app:diagnose' %}">환자 진단</a></li>
-            <li><a href=".">병증 탐색</a></li>
-            <li><a href=".">약재 탐색</a></li>
-            <li><a href=".">처방 탐색</a></li>
           </ul>
         </li>
         <li><a><i class="fa fa-desktop"></i> 내 프로필 <span class="fa fa-chevron-down"></span></a>

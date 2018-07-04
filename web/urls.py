@@ -15,8 +15,5 @@ urlpatterns = [
     path('patientReceptionPost/', views.patientReceptionPost, name='patientReceptionPost'),
     path('patientReception/', views.patientReceptionView.as_view(), name='patientReception'),
     path('diagnose/', views.diagnoseView.as_view(), name='diagnose'),
-    # path('exerciseGoalForm/', views.ExerciseGoalFormView.as_view(), name='exerciseGoalForm'),
-    # path('exerciseLogView/', views.ExerciseLogView.as_view(), name='exerciseLog'),
-
-    # path('exerciseGoalForm/enroll/', views.enrollExerciseGoal, name='enrollExerciseGoal'),
+    path('dataMining/', views.patientDataMiningView.as_view(), name='patientDataMining'),
 ]
